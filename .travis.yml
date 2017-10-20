@@ -17,5 +17,5 @@ addons:
 install: true
 
 script:
-  - mvn clean verify
+  - mvn -X clean verify
 
