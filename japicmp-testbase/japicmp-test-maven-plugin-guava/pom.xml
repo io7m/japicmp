@@ -9,7 +9,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.github.siom79.japicmp</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>japicmp-maven-plugin</artifactId>
 			<version>${project.version}</version>
 		</dependency>
@@ -18,7 +18,7 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>com.github.siom79.japicmp</groupId>
+				<groupId>${project.groupId}</groupId>
 				<artifactId>japicmp-maven-plugin</artifactId>
 				<version>${project.version}</version>
 				<configuration>

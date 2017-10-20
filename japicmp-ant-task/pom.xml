@@ -23,26 +23,19 @@
 		</license>
 	</licenses>
 
-	<properties>
-		<ant.version>1.9.5</ant.version>
-	</properties>
-
 	<dependencies>
 		<dependency>
-			<groupId>com.github.siom79.japicmp</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>japicmp</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.ant</groupId>
 			<artifactId>ant</artifactId>
-			<version>${ant.version}</version>
-			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.ant</groupId>
 			<artifactId>ant-testutil</artifactId>
-			<version>${ant.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -52,7 +45,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.20</version>
 				<configuration>
 					<excludes>
 						<exclude>**/ant/**</exclude>
@@ -62,7 +54,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>2.20</version>
 				<configuration>
 					<includes>
 						<include>**/ant/**</include>
@@ -88,17 +79,14 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>3.0.4</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>2.17</version>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
-				<version>2.7</version>
 			</plugin>
 		</plugins>
 	</reporting>

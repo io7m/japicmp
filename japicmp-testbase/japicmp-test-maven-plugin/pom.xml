@@ -14,17 +14,16 @@
 		<mpir.skip>true</mpir.skip>
 		<japicmp.skip-jdk7>false</japicmp.skip-jdk7>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
-			<version>6.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-math3</artifactId>
-			<version>3.4</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>

@@ -1,8 +1,23 @@
+env:
+  _JAVA_OPTIONS="-Xms1G -Xmx4G"
+
 language: java
-script: mvn integration-test
+
 jdk:
-    - oraclejdk9
-    - oraclejdk8
-    - oraclejdk7
-    - openjdk7
-sudo: false
+  - oraclejdk9
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk7
+
+addons:
+  apt:
+    packages:
+      - doxygen
+      - oracle-java8-installer
+      - oracle-java9-installer
+
+install: true
+
+script:
+  - mvn clean verify
+

@@ -11,7 +11,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.github.siom79.japicmp</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>japicmp-test-service-v2</artifactId>
 			<version>${project.version}</version>
 		</dependency>
