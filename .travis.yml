@@ -12,7 +12,6 @@ jdk:
 addons:
   apt:
     packages:
-      - doxygen
       - oracle-java8-installer
       - oracle-java9-installer
 
