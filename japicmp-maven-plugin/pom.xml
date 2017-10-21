@@ -30,53 +30,22 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.apache.maven</groupId>
-			<artifactId>maven-plugin-api</artifactId>
-			<scope>provided</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.maven</groupId>
-					<artifactId>maven-model</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.maven</groupId>
-					<artifactId>maven-artifact</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.sisu</groupId>
-					<artifactId>org.eclipse.sisu.plexus</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>com.github.siom79.japicmp</groupId>
+			<artifactId>japicmp</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.maven</groupId>
 			<artifactId>maven-core</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.github.siom79.japicmp</groupId>
-			<artifactId>japicmp</artifactId>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-model</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.maven</groupId>
-			<artifactId>maven-artifact</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.maven</groupId>
-			<artifactId>maven-compat</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.maven.reporting</groupId>
-			<artifactId>maven-reporting-impl</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>xerces</groupId>
-					<artifactId>xercesImpl</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.maven.reporting</groupId>
-			<artifactId>maven-reporting-api</artifactId>
+			<artifactId>maven-plugin-api</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.maven.plugin-tools</groupId>
@@ -84,9 +53,23 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-artifact</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.reporting</groupId>
+			<artifactId>maven-reporting-impl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.reporting</groupId>
+			<artifactId>maven-reporting-api</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.codehaus.groovy</groupId>
 			<artifactId>groovy-jsr223</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
